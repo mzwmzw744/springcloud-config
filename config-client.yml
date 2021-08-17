@@ -3,12 +3,11 @@ spring:
     active: dev
 
 ---
-
 server:
   port: 8201
 spring:
-profiles: dev
-  application:
+  profiles: dev
+  application: 
     name: springcloud-proviter-dept
 
 #Eureka的配置，服务注册到哪里
@@ -22,7 +21,7 @@ server:
   port: 8202
 
 spring:
-profiles: test	
+  profiles: test
   application:
     name: springcloud-proviter-dept
 
